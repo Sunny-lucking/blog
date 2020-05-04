@@ -1,11 +1,9 @@
-#### interview
-前端阳光 面试系列文章综合
-
-#js篇章
 
 
+# js篇章
 
 
+@[TOC](（立下flag）-16 关于【Promise】十问)
 
 ![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS84NThlYTAzYi01MTlhLTQ0NGYtYThlMC00NTM4NDU4YjhiMjYucG5n?x-oss-process=image/format,png)
 
