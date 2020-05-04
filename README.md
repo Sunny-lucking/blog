@@ -4,7 +4,18 @@
 
 ![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS84NThlYTAzYi01MTlhLTQ0NGYtYThlMC00NTM4NDU4YjhiMjYucG5n?x-oss-process=image/format,png)
 
-
+第一问：了解 Promise 吗？
+第二问：Promise 解决的痛点是什么？
+第三问：Promise 解决的痛点还有其他方法可以解决吗？如果有，请列举。
+第四问：Promise 如何使用？
+第五问：Promise 的业界实现都有哪些？
+第六问： Promise的问题？解决办法？
+第七问：老旧浏览器没有Promise全局对象增么办?
+第八问：怎么让一个函数无论promise对象成功和失败都能被调用？
+第九问：红灯3秒亮一次，绿灯1秒亮一次，黄灯2秒亮一次；如何让三个灯不断交替重复亮灯？（用Promise实现）三个亮灯函数已经存在：
+第十问:实现 mergePromise 函数，把传进去的数组按顺序先后执行，并且把返回的数据先后放到数组 data 中。
+第十一问：封装一个异步加载图片的方法
+第十二问：手写promise
 ## 0.1. 第一问：了解 Promise 吗？
 1) 了解Promise，Promise是一种异步编程的解决方案，有三种状态，pending（进行中）、resolved（已完成）、rejected（已失败）。当Promise的状态由pending转变为resolved或reject时，会执行相应的方法
 
