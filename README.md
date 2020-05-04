@@ -1,21 +1,18 @@
 
 
-# js篇章
 
-
-@[TOC](（立下flag）-16 关于【Promise】十问)
 
 ![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS84NThlYTAzYi01MTlhLTQ0NGYtYThlMC00NTM4NDU4YjhiMjYucG5n?x-oss-process=image/format,png)
 
 
-## 第一问：了解 Promise 吗？
+## 0.1. 第一问：了解 Promise 吗？
 1) 了解Promise，Promise是一种异步编程的解决方案，有三种状态，pending（进行中）、resolved（已完成）、rejected（已失败）。当Promise的状态由pending转变为resolved或reject时，会执行相应的方法
 
 2) Promised的特点是只有异步操作的结果，可以决定当前是哪一种状态，任务其他操作都无法改变这个状态，也是“Promise”的名称的由来，同时，状态一旦改变，就无法再次改变状态
 
 
 
-## 第二问：Promise 解决的痛点是什么？
+## 0.2. 第二问：Promise 解决的痛点是什么？
 Promise解决的痛点：
 
 1）回调地狱，代码难以维护， 常常第一个的函数的输出是第二个函数的输入这种现象，是为解决异步操作函数里的嵌套回调（callback hell）问题，代码臃肿，可读性差，只能在回调里处理异常
@@ -26,7 +23,7 @@ Promise解决的痛点：
 
 4）promise可以解决信任问题，对于回调过早、回调过晚或没有调用和回调次数太少或太多，由于promise只能决议一次，决议值只能有一个，决议之后无法改变，任何then中的回调也只会被调用一次，所以这就保证了Promise可以解决信任问题
 5)Promise最大的好处是在异步执行的流程中，把执行代码和处理结果的代码清晰地分离了
-## 第三问：Promise 解决的痛点还有其他方法可以解决吗？如果有，请列举。
+## 0.3. 第三问：Promise 解决的痛点还有其他方法可以解决吗？如果有，请列举。
 
 1）Promise 解决的痛点还有其他方法可以解决，比如setTimeout、事件监听、回调函数、Generator函数，async/await
 
@@ -38,19 +35,19 @@ Promise解决的痛点：
 
 5）async/await
 
-## 第四问：Promise 如何使用？
+## 0.4. 第四问：Promise 如何使用？
 1）创造一个Promise实例
 
 2）Promise实例生成以后，可以用then方法分别指定resolved状态和rejected状态的回调函数
 
 3）可用Promise的try和catch方法预防异常
 
-## 第五问：Promise 的业界实现都有哪些？
+## 0.5. 第五问：Promise 的业界实现都有哪些？
 1） promise可以支持多个并发的请求，获取并发请求中的数据
 
 2）promise可以解决可读性的问题，异步的嵌套带来的可读性的问题，它是由异步的运行机制引起的，这样的代码读起来会非常吃力
 
-## 第六问： Promise的问题？解决办法？
+## 0.6. 第六问： Promise的问题？解决办法？
 promise的问题为：
 
 promise一旦执行，无法中途取消
@@ -63,7 +60,7 @@ promise的内如何执行，监测起来很难
 
 正是因为这些原因，ES7引入了更加灵活多变的async，await来处理异步
 
-## 第七问：老旧浏览器没有Promise全局对象增么办?
+## 0.7. 第七问：老旧浏览器没有Promise全局对象增么办?
 
 果辛辛苦苦写完代码，测试后发现不兼容IE6、7增么办？难道要推翻用回调函数重写？当然不是这样，轮子早就造好了。
 
@@ -72,7 +69,7 @@ promise的内如何执行，监测起来很难
 引入这个polyfill之后，它会在window对象中加入Promise对象。这样我们就可以全局使用Promise了。
 
 
-## 第八问：怎么让一个函数无论promise对象成功和失败都能被调用？
+## 0.8. 第八问：怎么让一个函数无论promise对象成功和失败都能被调用？
 
 **笨方法：**
 
@@ -110,7 +107,7 @@ Promise.resolve(function(){console.log(2);}).then(function(cb){cb()})
 ```
 
 
-## 第九问：红灯3秒亮一次，绿灯1秒亮一次，黄灯2秒亮一次；如何让三个灯不断交替重复亮灯？（用Promise实现）三个亮灯函数已经存在：
+## 0.9. 第九问：红灯3秒亮一次，绿灯1秒亮一次，黄灯2秒亮一次；如何让三个灯不断交替重复亮灯？（用Promise实现）三个亮灯函数已经存在：
 
 ```js
 function red() {
@@ -162,7 +159,7 @@ var step = function () {
 step();
 ```
 
-## 第十问:实现 mergePromise 函数，把传进去的数组按顺序先后执行，并且把返回的数据先后放到数组 data 中。
+## 0.10. 第十问:实现 mergePromise 函数，把传进去的数组按顺序先后执行，并且把返回的数据先后放到数组 data 中。
 
 
 ```
@@ -252,7 +249,7 @@ ajaxArray.forEach(function (item) {
 return sequence;
 ```
 
-## 第十一问：封装一个异步加载图片的方法
+## 0.11. 第十一问：封装一个异步加载图片的方法
 
 
 ```js
@@ -270,7 +267,7 @@ function loadImageAsync(url) {
 }   
 ```
 
-## 第十二问：手写promise
+## 0.12. 第十二问：手写promise
 
 请看我的另一篇文章
 [一步一步实现自己的Promise](https://mp.weixin.qq.com/s?__biz=MzU5NDM5MDg1Mw==&tempkey=MTA1OV9Bb2RScjkyZ2NEb21iR0tvWU9WNGhzYUJLbmk2SlJwYUJIM0ZPM3pQbXJvRUVJUWgzYlpZMmNHT3ZPWURhelk4ck1zVkhFYWVTYUhyd01EaTVrd3hPNVFVRGlFSVk5ajBSdmE2cUo1bzgwQ2xiTHJxLVR5amZpdkh3NjFuRlRtMGx1NlhUZm5zUnUzQ3JIU09zaUJzMmdSVC0wNUwwd0twWG5ITGZBfn4%3D&chksm=7e00b9d2497730c424258da7d8dac063c0a3f1792a77dc241e7f72a682936ef5799e7f625747#rd)
