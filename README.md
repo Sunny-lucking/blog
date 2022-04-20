@@ -95,15 +95,16 @@
 - [学习vue源码（19）四探生命周期之初始化props](https://mp.weixin.qq.com/s?__biz=MzU5NDM5MDg1Mw%3D%3D&chksm=fe00b1a8c97738be05c8d632fb3aea51a066b7f35e46923da2b5d1e530fa0309cd0c1afc4629&idx=2&lang=zh_CN&mid=2247486338&scene=21&sn=3c14194a82ebc8ed86455ca5e276de83&token=1754964428#wechat_redirect)
 
 
-## 个人成长
-- [毕业照](http://mp.weixin.qq.com/s?__biz=MzU5NDM5MDg1Mw==&amp;mid=2247491749&amp;idx=1&amp;sn=ce0aa09f22c8cd82c7b48c6fa7cca3dc&amp;chksm=fe035a8fc974d39972f2f8924e7b83862d86ee9197b254013ebee9afb428151543426d279506&token=1401521668&lang=zh_CN#rd)
+
 
 ## 内推
 
 可以帮忙大厂的内推哦，[点击即可]()
 
-## About
-培歌行，又名“阳光”，公众号《前端阳光》，一名苦逼的前端开发工程师。
+## 个人成长
+- [毕业照](http://mp.weixin.qq.com/s?__biz=MzU5NDM5MDg1Mw==&amp;mid=2247491749&amp;idx=1&amp;sn=ce0aa09f22c8cd82c7b48c6fa7cca3dc&amp;chksm=fe035a8fc974d39972f2f8924e7b83862d86ee9197b254013ebee9afb428151543426d279506&token=1401521668&lang=zh_CN#rd)
+
+**培歌行**，又名“**阳光**”，公众号《**前端阳光**》，一名苦逼的前端开发工程师。
 
 简单经历：
 - 2019年，自学前端
