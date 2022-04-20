@@ -97,3 +97,8 @@
 
 ## 个人成长
 - [毕业照](http://mp.weixin.qq.com/s?__biz=MzU5NDM5MDg1Mw==&amp;mid=2247491749&amp;idx=1&amp;sn=ce0aa09f22c8cd82c7b48c6fa7cca3dc&amp;chksm=fe035a8fc974d39972f2f8924e7b83862d86ee9197b254013ebee9afb428151543426d279506&token=1401521668&lang=zh_CN#rd)
+
+## 联系方式
+除了这里，还可以在其他的地方找到我。
+
+公众号《前端阳光》，可加我微信，可加入技术交流群
