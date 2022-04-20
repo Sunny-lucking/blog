@@ -32,7 +32,7 @@
 
 ## 面试&读书笔记总结
 - [CSS盒模型之内边距、边框、外边距 十九问 （读《CSS权威指南》）](https://github.com/Sunny-lucking/interview/issues/21)
-- 
+
 - [进程、线程与页面渲染的关系 （读《浏览器核心原理》）](https://github.com/Sunny-lucking/interview/issues/22)
 - [从栈、堆、预解析来解释闭包原理（读《浏览器核心原理》）](https://github.com/Sunny-lucking/interview/issues/23)
 - [JS设计思想篇（读《浏览器核心原理》）](https://github.com/Sunny-lucking/interview/issues/24)
