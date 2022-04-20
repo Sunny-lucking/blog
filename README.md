@@ -94,6 +94,12 @@
 
 - [学习vue源码（19）四探生命周期之初始化props](https://mp.weixin.qq.com/s?__biz=MzU5NDM5MDg1Mw%3D%3D&chksm=fe00b1a8c97738be05c8d632fb3aea51a066b7f35e46923da2b5d1e530fa0309cd0c1afc4629&idx=2&lang=zh_CN&mid=2247486338&scene=21&sn=3c14194a82ebc8ed86455ca5e276de83&token=1754964428#wechat_redirect)
 
+## 深入浅出学习node
+- [【深入Node探究】（1）“Node特点与应用场景” 有四问](https://github.com/Sunny-lucking/blog/issues/36)
+- [【深入探究Node】（2）“模块机制” 有十三问](https://github.com/Sunny-lucking/blog/issues/37)
+- [【深入探究Node】（3）“异步IO” 有九问](https://github.com/Sunny-lucking/blog/issues/38)
+- [【深入探究Node】（4）“内存控制” 有十五问](https://github.com/Sunny-lucking/blog/issues/39)
+- [【深入探究Node】（5）“Buffer与乱码的故事” 有十问](https://github.com/Sunny-lucking/blog/issues/40)
 
 
 
