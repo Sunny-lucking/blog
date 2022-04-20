@@ -29,3 +29,8 @@
 - [研究大佬写的倒计时组件(Vue)，学到了不少东西](https://github.com/Sunny-lucking/interview/issues/19)
 - [产品经理：阳光你来实现一下分享出去的URL链接预览图片、标题和描述。](https://github.com/Sunny-lucking/interview/issues/16)
 - [快用上PerformanceObserver获取首屏时间，别再手动计算首屏时间了](https://github.com/Sunny-lucking/interview/issues/15)
+
+## 面试&读书笔记总结
+
+
+
