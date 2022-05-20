@@ -2,8 +2,8 @@
 
 ## 手写核心原理系列
 
-- [手写Vuex核心原理，再也不怕面试官问我Vuex原理](https://github.com/Sunny-lucking/interview/issues/35)
-- [手写Vue核心原理，再也不怕面试官问我Vue原理](https://github.com/Sunny-lucking/interview/issues/1)
+- [手写Vuex核心原理，再也不怕面试官问我Vuex原理](https://github.com/Sunny-lucking/interview/issues/1)
+- [手写Vue核心原理，再也不怕面试官问我Vue原理](https://github.com/Sunny-lucking/interview/issues/35)
 - [手写Vue-router核心原理，再也不怕面试官问我Vue-router原理](https://github.com/Sunny-lucking/interview/issues/2)
 - [手写webpack核心原理，再也不怕面试官问我webpack原理](https://github.com/Sunny-lucking/interview/issues/3)
 - [手写axios核心原理，再也不怕面试官问我axios原理](https://github.com/Sunny-lucking/interview/issues/4)
