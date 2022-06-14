@@ -26,6 +26,7 @@
 
 ## 实战经验
 - [三面面试官：运行 npm run xxx 的时候发生了什么？](https://github.com/Sunny-lucking/blog/issues/43)
+- [纯css就能实现可点击切换的轮播图，feel起来很丝滑](https://github.com/Sunny-lucking/blog/issues/44)
 - [拜托，css这样实现多行文本“展开收起” 超酷的好吧](https://github.com/Sunny-lucking/interview/issues/18)
 - [UI小姐姐说我用CSS实现毛玻璃效果的样子很帅](https://github.com/Sunny-lucking/interview/issues/17)
 - [研究大佬写的倒计时组件(Vue)，学到了不少东西](https://github.com/Sunny-lucking/interview/issues/19)
