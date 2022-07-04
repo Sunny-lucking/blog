@@ -1,6 +1,5 @@
 import Fingerprint2 from 'fingerprintjs2';
-/* 来自@余智兴 */
-/* eslint-disable */
+
 function retry(isDone, next) {
   let current_trial = 0,
     max_retry = 50,
