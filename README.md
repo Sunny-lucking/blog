@@ -33,6 +33,7 @@
 - [产品经理：阳光你来实现一下分享出去的URL链接预览图片、标题和描述。](https://github.com/Sunny-lucking/interview/issues/16)
 - [快用上PerformanceObserver获取首屏时间，别再手动计算首屏时间了](https://github.com/Sunny-lucking/interview/issues/15)
 - [快来学习下webhook吧！超级简单易学](https://github.com/Sunny-lucking/blog/issues/41)
+- [我写了一个将 excel 文件转化成 本地json文件的插件](https://github.com/Sunny-lucking/HowToBuildMyExcelTobeJson/blob/main/README.md)
 
 ## 面试&读书笔记总结
 - [CSS盒模型之内边距、边框、外边距 十九问 （读《CSS权威指南》）](https://github.com/Sunny-lucking/interview/issues/21)
