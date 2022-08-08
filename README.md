@@ -36,6 +36,7 @@
 - [快来学习下webhook吧！超级简单易学](https://github.com/Sunny-lucking/blog/issues/41)
 - [我写了一个将 excel 文件转化成 本地json文件的插件](https://github.com/Sunny-lucking/HowToBuildMyExcelTobeJson/blob/main/README.md)
 - [太卡了，巧妙地优化了跑马灯](https://github.com/Sunny-lucking/blog/issues/45)
+- [我用vue3和egg开发了一个早报学习平台，带领群友走向技术大佬] (https://github.com/Sunny-lucking/morning-news)
 
 ## 面试&读书笔记总结
 - [CSS盒模型之内边距、边框、外边距 十九问 （读《CSS权威指南》）](https://github.com/Sunny-lucking/interview/issues/21)
