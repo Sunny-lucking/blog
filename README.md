@@ -16,6 +16,7 @@
 - [手写redux-actions核心原理，再也不怕面试官问我redux-actions核心原理](https://github.com/Sunny-lucking/interview/issues/11)
 - [手写脚手架](https://github.com/Sunny-lucking/pgx-cli)
 - [利用 radio和label手写一个精美的可点击轮播图](https://github.com/Sunny-lucking/howToBuiMySwiper)
+- [手写flexible.js的原理实现，我终于明白移动端多端适配](https://github.com/Sunny-lucking/blog/issues/46)
 
 
 ## 我的翻译
