@@ -8,6 +8,7 @@
 - [手写webpack核心原理，再也不怕面试官问我webpack原理](https://github.com/Sunny-lucking/howToBuildMyWebpack/blob/master/README.md)
 - [手写axios核心原理，再也不怕面试官问我axios原理](https://github.com/Sunny-lucking/howToBuildMyAxios)
 - [手写Promise核心原理，再也不怕面试官问我Promise原理](https://github.com/Sunny-lucking/howToBuildMyPromise)
+- [手写async await核心原理，再也不怕面试官问我async await原理](https://github.com/Sunny-lucking/blog/issues/48)
 - [手写generator核心原理，再也不怕面试官问我generator原理](https://github.com/Sunny-lucking/interview/issues/6)
 - [手写ReactHook核心原理，再也不怕面试官问我ReactHook原理](https://github.com/Sunny-lucking/HowToBuildMyReactHook)
 - [手写react核心原理，再也不怕面试官问我react原理](https://github.com/Sunny-lucking/howToBuildMyReact)
