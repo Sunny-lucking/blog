@@ -60,6 +60,9 @@
 - [关于【cookie，web Storage】十问 （读《红宝书》）](https://github.com/Sunny-lucking/interview/issues/33)
 - [关于【事件】十问 （读《红宝书》）](https://github.com/Sunny-lucking/interview/issues/34)
 
+## 设计模式
+- [设计模式在前端的使用](https://pattern.windliang.wang/)
+
 
 ## Vue源码解读
 - [学习vue源码（1） 手写与事件相关的实例方法](https://mp.weixin.qq.com/s?__biz=MzU5NDM5MDg1Mw%3D%3D&chksm=fe00be50c9773746af0f38a81d596ba964cb773de25c8c43478ca4eda982649bd204cfee6aa0&idx=1&lang=zh_CN&mid=2247484538&scene=21&sn=636c4998e0e889f523c530b794bab224&token=1754964428#wechat_redirect)
