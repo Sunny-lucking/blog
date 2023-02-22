@@ -19,6 +19,8 @@
 - [利用 radio和label手写一个精美的可点击轮播图](https://github.com/Sunny-lucking/howToBuiMySwiper)
 - [手写flexible.js的原理实现，我终于明白移动端多端适配](https://github.com/Sunny-lucking/blog/issues/46)
 
+## 算法总结
+- [leetcode 算法总结--二分查找](https://github.com/Sunny-lucking/blog/issues/52)
 
 ## 我的翻译
 - [BAT大佬推荐使用的HTML5的十个功能](https://github.com/Sunny-lucking/interview/issues/14)
