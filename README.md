@@ -22,6 +22,7 @@
 ## 算法总结
 - [leetcode 算法总结--二分查找](https://github.com/Sunny-lucking/blog/issues/52)
 - [leetcode 算法总结--前缀和](https://github.com/Sunny-lucking/blog/issues/53)
+- [leetcode 算法总结--差分数组](https://github.com/Sunny-lucking/blog/issues/54)
 
 ## 我的翻译
 - [BAT大佬推荐使用的HTML5的十个功能](https://github.com/Sunny-lucking/interview/issues/14)
