@@ -1,0 +1,173 @@
+# Java函数式编程
+
+## 概念：
+
+面向对象思想关注用什么对象完成什么事情。而函数式编程思想就类似数学中的函数。它关注的是对数据进行了说明操作。（类似把具体的操作代码通过参数的形式传递进去）
+
+## Lambda表达式
+
+- lambda是JDK8中的一个语法糖，可 以对某些匿名内部类的写法进行优化，让函数式编程只关注数据而不是对象。
+- 基本格式：(参数列表)->{代码}
+
+可以说是js的箭头函数了
+
+
+## stream流
+
+stream使用的是函数式编程模式，可以被用来对集合或数组进行链状流式的操作.
+有别于其他输入输出流，这里是针对集合操作数据的流哦
+
+## 常用方法
+### 中间操作
+**filter**,**map**,**distinct**,**sorted**,**limit**,**skip**,**flatMap**
+
+### 终结操作
+**forEach**,**collect**,**count**,**max**,**min**,**reduce**
+
+- map:相当于对数据进行一个操作，可以自定义返回值等
+- distinct:可以去除流中的相同元素，注意（该方法依赖的Object的equals方法来判断是否是相同对象，所以要重写equals方法，否则只有对象地址一样时才会被认为是重复）
+- filter: 筛选条件
+- forEach:遍历所有元素
+
+
+```java
+authors.stream() // 返回值是stream对象，也就是集合转流
+        .filter(author -> author.getAge() < 18) // 筛选条件
+        .map(Author::getName) // 只要名字
+        .distinct() // 去重，这里不能放在前面，不然比较的是author元素不是名字
+        .forEach(System.out::println); // 遍历输出
+```
+
+- sorted:可以对流中的元素进行排序，传入空参时使用的是实体类的比较方法
+- skip:跳过流中的前n个元素，返回剩下的元素
+
+```java
+List<Author> authors = getAuthors();
+authors.stream().sorted().skip(1).forEach(author -> System.out.println(author.getAge()));
+```
+
+- flatMap:map能把一个对象转换成另外一个对象来作为流中的元素，而flatMap可以把一个对象转换成多个对象作为流中的元素,数组扁平化
+```java
+/**
+ * 打印现有数据的所有分类，去重，不能出现格式 哲学,爱情 这种拼接的
+ */
+ 
+ getAuthors().stream().flatMap(author -> author.getBookList().stream())
+        .flatMap(book -> Arrays.stream(book.getCategory().split(",")))
+        .distinct().forEach(System.out::println);
+```
+
+- min&max:返回的是option对象，这里和sorted一样，得指定比较规则
+
+```java
+Optional<Double> min = getAuthors().stream()
+                .flatMap(author -> author.getBookList().stream())
+                .map(book -> book.getScore())
+                .distinct()
+                .min((s1, s2) -> (int) (s1 - s2));
+        System.out.println(" 所有作家书籍中分数最低的是： "+ min.get());
+```
+
+- collect:把当前流转换成一个集合（list, set, map）
+  - Collectors.toList()
+  - Collectors.toSet()
+  - Collectors.toMap(key, value)
+  
+```java
+System.out.println("转换成list集合");
+List<Book> bookList = getAuthors().stream().flatMap(author -> author.getBookList().stream())
+        .collect(Collectors.toList());
+for (Book book : bookList) {
+    System.out.println(book.toString());
+}
+
+System.out.println("转换成set");
+Set<Book> bookSet = getAuthors().stream()
+        .flatMap(author -> author.getBookList().stream())
+        .collect(Collectors.toSet());
+for (Book book : bookSet) {
+    System.out.println(book.toString());
+}
+
+System.out.println("转换成map");
+Map<String, Book> map = getAuthors().stream()
+        .flatMap(author -> author.getBookList().stream())
+        .distinct()
+        .collect(Collectors.toMap(book -> book.getName(), book -> book)); // 第一个是key,第二个是value
+```
+
+- anyMatch:可以用来判断是否有任意符合匹配条件的元素，结果为boolean类型
+
+```java
+boolean anyMatch = getAuthors().stream()
+        .anyMatch(author -> author.getAge() > 29);
+System.out.println("是否有年龄在29以上的作家:" + (anyMatch ? "是" : "否"));
+```
+
+- allMatch:可以用来判断是否都匹配条件，结果也是boolean类型，都符合则为true
+
+```java
+boolean allMatch = getAuthors().stream()
+        .allMatch(author -> author.getAge() > 18);
+System.out.println("所有作家都是成年人:" + (allMatch ? "是" : "否"));
+```
+
+- noneMatch:是否都不符合，都不符合则为true
+```java
+boolean noneMatch = getAuthors().stream()
+        .noneMatch(author -> author.getAge() > 60);
+System.out.println("所有作家都是退休的了:" + (noneMatch ? "是" : "否"));
+```
+
+- findAny:获取流中的任意一个元素，该方法无法保证获取的是流中的第一个元素，只是匹配到
+```java
+Optional<Author> any = getAuthors().stream()
+        .distinct()
+        .filter(author -> author.getAge() > 18)
+        .findAny();
+// any是一个对象，任意匹配到的一个对象
+System.out.println("任意一个大于18岁作家的名字：" + any.get().getName());
+System.out.println("我比较好奇的是，好像每次输出的都是同一个对象值");
+```
+- findFirst:获取流中的第一个元素
+```java
+Optional<Author> first = getAuthors().stream().sorted((o1, o2) -> (o1.getAge() - o2.getAge())).findFirst();
+System.out.println("年龄最小的一个作家：" + first.get().getName());
+```
+
+- reduce:对流中的数据按照你制定的计算方式计算出一个结果，并返回一个Optional描述归约值（如果有）
+```java
+Integer reduce = getAuthors().stream().map(author -> author.getAge()).reduce(0, (result, element) -> result + element)
+System.out.println("用reduce求得所有作者年龄和是:" + reduce);
+```
+
+### 注意事项
+- 惰性求值，如果没有终结操作是不会执行的
+- 流是一次性的，经过终结操作之后就不能再被使用
+- 不会影响元数据
+
+## Optional
+
+很多情况下代码容易出现空指针异常，尤其对象的属性是另外一个对象的时候， 判断十分麻烦，代码也会很臃肿，这种情况下Java 8 引入了optional来避免空指针异常， 并且很多函数式编程也会用到API也都用到
+
+一般我们使用Optional.ofNullable来把数据封装成一个optional对象，无论传入的参数是否为null都不会出现问题
+```
+Author author = getAuthor();  
+Optional<Author> author = Optional.ofNullable(author);
+
+author.ifPresent(author -> System.out.println(author.getName()));
+```
+
+
+当我们获取到一个Optional对象的时候，可以用ifPresent方法来去消费其中的值， 这个方法会先去判断是否为空，不为空才会去执行消费代码，优雅避免空指针 `OptionalObject.ifPresent()`
+
+## lambda方法引用
+
+**用法及基本格式**
+
+方法体中只有一个方法时
+
+- 引用类静态方法 类名::方法名 
+- 引用对象的实例方法 对象名::方法名
+- 引用类的实例方法 类名::方法名
+- 构造器引用 类名::new StringBuilder::new
