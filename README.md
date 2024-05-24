@@ -67,6 +67,7 @@
 
 ## [java学习]
 - [java函数式编程](https://github.com/Sunny-lucking/blog/issues/56)
+- [mybatis-plus 学习](https://github.com/Sunny-lucking/mpStudy)
 ## 设计模式
 - [设计模式在前端的使用](https://pattern.windliang.wang/)
 
