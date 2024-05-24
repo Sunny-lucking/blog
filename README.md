@@ -65,6 +65,8 @@
 - [关于【cookie，web Storage】十问 （读《红宝书》）](https://github.com/Sunny-lucking/interview/issues/33)
 - [关于【事件】十问 （读《红宝书》）](https://github.com/Sunny-lucking/interview/issues/34)
 
+## [java学习]
+- [java函数式编程](https://github.com/Sunny-lucking/blog/issues/56)
 ## 设计模式
 - [设计模式在前端的使用](https://pattern.windliang.wang/)
 
